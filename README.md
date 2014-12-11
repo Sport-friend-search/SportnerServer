@@ -1,14 +1,16 @@
 SportnerServer
 ==============
 
-Sportner server with RESTAPI
+<b>Sportner server with RESTAPI</b>
 
 To communicate easily, please use class librarys provided in sportnerServerLibraries.zip, add all .dll's as references to your server client project.
 
-Note! There is test project provided with all example calls to server!
-API documentation available: http://sportner.azurewebsites.net/swagger/
+<b>Note!</b> There is test project provided with all example calls to server.
 
-Example request (made using restSharp): 
+API documentation available: 
+http://sportner.azurewebsites.net/swagger/
+
+Example C# request (made using restSharp): 
 ```
 var client = new RestClient("http://sportner.azurewebsites.net");
 var request = new RestRequest("api/Users", Method.POST);
