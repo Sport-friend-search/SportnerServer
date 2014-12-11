@@ -9,7 +9,7 @@ Note! There is test project provided with all example calls to server!
 API documentation available: http://sportner.azurewebsites.net/swagger/
 
 Example request (made using restSharp): 
-<code> 
+```
 var client = new RestClient("http://sportner.azurewebsites.net");
 var request = new RestRequest("api/Users", Method.POST);
 
@@ -26,4 +26,4 @@ request.RequestFormat = DataFormat.Json;
 var resp = client.Execute(request);
 var content = resp.Content;
 
-</code>
+```
