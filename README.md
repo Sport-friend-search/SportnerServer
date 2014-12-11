@@ -3,12 +3,16 @@ SportnerServer
 
 <b>Sportner server with RESTAPI</b>
 
-To communicate easily, please use class librarys provided in sportnerServerLibraries.zip, add all .dll's as references to your server client project.
+To communicate easily, please use class libraries provided in sportnerServerLibraries.zip, add all .dll's as references to your server client project.
 
 <b>Note!</b> There is test project provided with all example calls to server.
 
 API documentation available: 
 http://sportner.azurewebsites.net/swagger/
+
+To start web service locally, ask password to connect to azure db, and add it to connection string, or use your own local database(use your own connection string) and perform code first to new database operations.
+
+Good luck!
 
 Example C# request (made using restSharp): 
 ```
