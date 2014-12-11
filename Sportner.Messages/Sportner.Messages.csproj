@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D6C58EB8-6297-4EF3-A21B-11183B29E17B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sportner.Messages</RootNamespace>
+    <AssemblyName>Sportner.Messages</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EventMessages\UpdateEventRequest.cs" />
+    <Compile Include="EventMessages\AddEventRequest.cs" />
+    <Compile Include="EventMessages\UpdateEventResponse.cs" />
+    <Compile Include="EventMessages\AddEventResponse.cs" />
+    <Compile Include="EventMessages\DeleteEventRequest.cs" />
+    <Compile Include="EventMessages\DeleteEventResponse.cs" />
+    <Compile Include="EventMessages\GetFilteredEventsRequest.cs" />
+    <Compile Include="EventMessages\GetFilteredEventsResponse.cs" />
+    <Compile Include="EventMessages\GetEventRequest.cs" />
+    <Compile Include="EventMessages\GetEventResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserMessages\GetAllUsersRequest.cs" />
+    <Compile Include="UserMessages\GetUserRequest.cs" />
+    <Compile Include="UserMessages\GetAllUsersResponse.cs" />
+    <Compile Include="UserMessages\UpdateUserRequest.cs" />
+    <Compile Include="UserMessages\GetUserResponse.cs" />
+    <Compile Include="UserMessages\UpdateUserResponse.cs" />
+    <Compile Include="UserMessages\AddUserResponse.cs" />
+    <Compile Include="UserMessages\AddUserRequest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sportner.Dto\Sportner.Dto.csproj">
+      <Project>{9cda4b1f-13c4-4e30-a6d6-ea46701b52d9}</Project>
+      <Name>Sportner.Dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sportner.Models\Sportner.Models.csproj">
+      <Project>{71e6c918-262a-415f-9952-040c1178b6c7}</Project>
+      <Name>Sportner.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sportner.Repositories\Sportner.Repositories.csproj">
+      <Project>{3c0ac6f3-f0b5-41b9-b78a-1efb41d8c7b7}</Project>
+      <Name>Sportner.Repositories</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="RatingMessages\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sportner.Models", "Sportner.Models\Sportner.Models.csproj", "{71E6C918-262A-415F-9952-040C1178B6C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sportner.Messages", "Sportner.Messages\Sportner.Messages.csproj", "{D6C58EB8-6297-4EF3-A21B-11183B29E17B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sportner.Repositories", "Sportner.Repositories\Sportner.Repositories.csproj", "{3C0AC6F3-F0B5-41B9-B78A-1EFB41D8C7B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sportner.Dto", "Sportner.Dto\Sportner.Dto.csproj", "{9CDA4B1F-13C4-4E30-A6D6-EA46701B52D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sportner.Handlers", "Sportner.Handlers\Sportner.Handlers.csproj", "{6ED5E1CF-5984-4524-9AD5-78944580BBE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sportner.WebAPI", "Sportner.WebAPIControllers\Sportner.WebAPI.csproj", "{A3CEC7E9-3994-4105-85E2-5C58F99D366C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProgram", "test\TestProgram.csproj", "{DFC48E59-B3C5-4B41-8B23-64AEB13D2445}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71E6C918-262A-415F-9952-040C1178B6C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71E6C918-262A-415F-9952-040C1178B6C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71E6C918-262A-415F-9952-040C1178B6C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71E6C918-262A-415F-9952-040C1178B6C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6C58EB8-6297-4EF3-A21B-11183B29E17B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6C58EB8-6297-4EF3-A21B-11183B29E17B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6C58EB8-6297-4EF3-A21B-11183B29E17B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6C58EB8-6297-4EF3-A21B-11183B29E17B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C0AC6F3-F0B5-41B9-B78A-1EFB41D8C7B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C0AC6F3-F0B5-41B9-B78A-1EFB41D8C7B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C0AC6F3-F0B5-41B9-B78A-1EFB41D8C7B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C0AC6F3-F0B5-41B9-B78A-1EFB41D8C7B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CDA4B1F-13C4-4E30-A6D6-EA46701B52D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CDA4B1F-13C4-4E30-A6D6-EA46701B52D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CDA4B1F-13C4-4E30-A6D6-EA46701B52D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CDA4B1F-13C4-4E30-A6D6-EA46701B52D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ED5E1CF-5984-4524-9AD5-78944580BBE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ED5E1CF-5984-4524-9AD5-78944580BBE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ED5E1CF-5984-4524-9AD5-78944580BBE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ED5E1CF-5984-4524-9AD5-78944580BBE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3CEC7E9-3994-4105-85E2-5C58F99D366C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3CEC7E9-3994-4105-85E2-5C58F99D366C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3CEC7E9-3994-4105-85E2-5C58F99D366C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3CEC7E9-3994-4105-85E2-5C58F99D366C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFC48E59-B3C5-4B41-8B23-64AEB13D2445}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFC48E59-B3C5-4B41-8B23-64AEB13D2445}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFC48E59-B3C5-4B41-8B23-64AEB13D2445}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFC48E59-B3C5-4B41-8B23-64AEB13D2445}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
