@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Dto;
+using Sportner.Dto;
 using Sportner.Messages.UserMessages;
+using Sportner.Models;
 using Sportner.Repositories;
 
 namespace Sportner.Handlers.UsersHandlers
@@ -21,7 +24,14 @@ namespace Sportner.Handlers.UsersHandlers
         {
             var users = _repository.GetAll();
 
-            return new GetAllUsersResponse { Users = users };
+            var mappedUsers = new List<UserDto>();
+
+            foreach (var user in users)
+            {
+                mappedUsers.Add(Mapper.MapToUserDto(user));
+            }
+
+            return new GetAllUsersResponse { Users = mappedUsers };
         }
 
         public override bool Validate(GetAllUserRequest request)

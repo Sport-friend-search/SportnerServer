@@ -20,6 +20,7 @@ namespace Sportner.Models
         public DateTime EndTime { get; set; }
         public string Description { get; set; }
         public int SportId { get; set; }
+        public int EventTypeId { get; set; }
 
         public int UserId { get; set; }
         public virtual User User { get; set; }

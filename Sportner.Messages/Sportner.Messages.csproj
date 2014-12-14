@@ -32,11 +32,9 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
@@ -64,14 +62,6 @@
     <ProjectReference Include="..\Sportner.Dto\Sportner.Dto.csproj">
       <Project>{9cda4b1f-13c4-4e30-a6d6-ea46701b52d9}</Project>
       <Name>Sportner.Dto</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Sportner.Models\Sportner.Models.csproj">
-      <Project>{71e6c918-262a-415f-9952-040c1178b6c7}</Project>
-      <Name>Sportner.Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Sportner.Repositories\Sportner.Repositories.csproj">
-      <Project>{3c0ac6f3-f0b5-41b9-b78a-1efb41d8c7b7}</Project>
-      <Name>Sportner.Repositories</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Dto;
 using Sportner.Messages.EventMessages;
 using Sportner.Models;
 using Sportner.Repositories;
@@ -20,21 +21,9 @@ namespace Sportner.Handlers.EventsHandlers
 
         public override UpdateEventResponse HandleCore(UpdateEventRequest request)
         {
-            // TODO: be excluded to separate mapper class
-            Event requestEvent = new Event
-            {
-                Address = request.Event.Address,
-                City = request.Event.City,
-                Description = request.Event.Description,
-                EndTime = request.Event.EndTime,
-                StartTime = request.Event.StartTime,
-                Latitude = request.Event.Latitude,
-                Longitude = request.Event.Longitude,
-                SportId = request.Event.SportId,
-                UserId = request.Event.UserId
-            };
+            var requestedEvent = Mapper.MapToEvent(request.Event);
 
-            _repository.Update(requestEvent);
+            _repository.Update(requestedEvent);
 
             return new UpdateEventResponse();
         }

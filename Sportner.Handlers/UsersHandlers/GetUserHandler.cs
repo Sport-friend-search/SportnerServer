@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Dto;
 using Sportner.Messages.UserMessages;
 using Sportner.Repositories;
 
@@ -21,7 +22,9 @@ namespace Sportner.Handlers.UsersHandlers
         {
             var user = _repository.Get(request.UserId);
 
-            return new GetUserResponse { User = user };
+            var requestedUser = Mapper.MapToUserDto(user);
+
+            return new GetUserResponse { User = requestedUser };
         }
 
         public override bool Validate(GetUserRequest request)

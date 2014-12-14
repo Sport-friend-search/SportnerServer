@@ -45,6 +45,7 @@
     <Compile Include="EventsHandlers\DeleteEventHandler.cs" />
     <Compile Include="EventsHandlers\UpdateEventHandler.cs" />
     <Compile Include="EventsHandlers\AddEventHandler.cs" />
+    <Compile Include="Mapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UsersHandlers\GetAllUsersHandler.cs" />
     <Compile Include="UsersHandlers\GetUserHandler.cs" />

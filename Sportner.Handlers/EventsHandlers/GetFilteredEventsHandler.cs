@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Dto;
 using Sportner.Dto;
 using Sportner.Messages.EventMessages;
 using Sportner.Models;
@@ -60,8 +61,8 @@ namespace Sportner.Handlers.EventsHandlers
                     (e, u) =>
                         new EventWithUserDto
                         {
-                            Event = e,
-                            User = u
+                            Event = Mapper.MapToEventDto(e),
+                            User = Mapper.MapToUserDto(u)
                         }
                     ).ToList();
 

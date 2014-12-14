@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Dto;
 using Sportner.Messages.UserMessages;
 using Sportner.Repositories;
 
@@ -19,7 +20,9 @@ namespace Sportner.Handlers.UsersHandlers
 
         public override AddUserResponse HandleCore(AddUserRequest request)
         {
-            _repository.Insert(request.User);
+            var requestedUser = Mapper.MapToUser(request.User);
+
+            _repository.Insert(requestedUser);
 
             return new AddUserResponse();
         }
